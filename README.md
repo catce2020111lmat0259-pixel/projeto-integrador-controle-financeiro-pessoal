@@ -1,5 +1,7 @@
 # Projeto Integrador - Sistema de Controle Financeiro Pessoal
 
+# Nome: FinançasFácil
+
 ## Integrantes
 - Gabriel  
 - Daniel  
