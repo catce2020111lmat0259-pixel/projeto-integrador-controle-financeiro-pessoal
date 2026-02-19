@@ -3,10 +3,10 @@
 # Nome: FinançasFácil
 
 ## Integrantes
-- Gabriel  
-- Daniel  
-- Diego  
-- Wesley  
+- Gabriel Lopes;
+- Daniel Bacelar;
+- Diego Bacelar;
+- Wesley Romão.
 
 ## Justificativa
 A escolha deste tema se justifica pela crescente necessidade de educação financeira e planejamento econômico na vida pessoal. A falta de controle financeiro é um dos principais fatores que contribuem para o endividamento e para a má gestão do orçamento. Dessa forma, o sistema permitirá que o usuário registre suas despesas e receitas, categorize seus gastos, acompanhe seu saldo mensal e visualize relatórios e gráficos que informe a sua situação financeira.
