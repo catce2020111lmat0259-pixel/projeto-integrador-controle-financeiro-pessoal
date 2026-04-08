@@ -1,6 +1,6 @@
 # Projeto Integrador - Sistema de Controle Financeiro Pessoal
 
-# Nome: FinançasFácil
+# Nome: FINE
 
 ## Integrantes
 - Gabriel Lopes;
