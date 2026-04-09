@@ -11,16 +11,31 @@ h1 {font-family: serif; color: #377ba8; margin: 1rem 0;}
 a {color: #377ba8; text-decoration: none;}
 
 main {
-    display: flex; gap: 2rem;
+    display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
+}
+
+.form-metas {
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+    gap: 3px;
+}
+
+.btn-salvar {
+    padding: 5px;
+    border: none;
+    max-width: 100px;
+    border-radius: 6px;
+    background: #007BFF;
+    color: white;
 }
 
 .dicas-container {width: 800px;}
 .dicas {background: #f0f8ff; padding: 10px; border-left: 4px solid #1e90ff; max-width: 80%;}
 
-li {
-    list-style: none;
-}
+li {list-style: none;}
 
 .secao-meta-criada {width: 800px;}
 .meta-criada {margin-bottom: 3px; background: #faf7fd; padding: 10px; border-left: 4px solid #c795ff; max-width: 80%; min-height: 10px; overflow-wrap: break-word;}
