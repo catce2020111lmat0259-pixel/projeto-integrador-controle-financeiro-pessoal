@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Metas</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Metas</h1>
+    </header>
+
+    <main>
+        <section class="secao-criar-metas">
+            <h3>Criar Metas</h3>
+
+            <div class="dicas-container">
+                <p class="dicas">
+                    <strong>DICA*</strong>
+                    Pergunte-se: "Quanto dinheiro eu quero economizar?" ou "Qual é o meu objetivo financeiro?"
+                    Você pode pode personalizar suas metas de acordo com suas necessidades e objetivos financeiros.
+                    Use as metas como um lembrete do seu "eu" presente para o seu "eu" futuro.
+                </p>
+            </div>
+            
+            
+            <form class="form-metas" action="/criar-metas/adicionar-metas" method="POST">
+
+                <label for="meta">Meta:</label>
+                <input type="text" id="meta" name="meta">
+
+                <input type="submit" value="Salvar">
+                
+            </form>
+
+            {% if context.mensagem %}
+                <div class="{{ context.tipo_mensagem }}">{{ context.mensagem }}</div>
+            {% endif %}
+
+        </section>
+        
+        <section class="secao-meta-criada">
+            <h3>Meta Criada</h3>
+            {% if context.metas %}
+                <p class="meta-criada">Meta: {{ context.metas[-1] }}</p>
+            {% endif %}
+
+            <p>Para listar suas metas, clique <a href="/listar-metas">aqui</a>.</p>
+        </section>
+    </main>
+</body>
+</html>

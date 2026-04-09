@@ -1,0 +1,35 @@
+html { 
+    font-family: sans-serif; padding: 1rem;
+}
+
+body {
+    max-width: 960px;
+}
+
+h1 {font-family: serif; color: #377ba8; margin: 1rem 0;}
+
+a {color: #377ba8; text-decoration: none;}
+
+main {
+    display: flex; gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.dicas-container {width: 800px;}
+.dicas {background: #f0f8ff; padding: 10px; border-left: 4px solid #1e90ff; max-width: 80%;}
+
+li {
+    list-style: none;
+}
+
+.secao-meta-criada {width: 800px;}
+.meta-criada {margin-bottom: 3px; background: #faf7fd; padding: 10px; border-left: 4px solid #c795ff; max-width: 80%; min-height: 10px; overflow-wrap: break-word;}
+
+.green {font-weight: bold; color: #00b92b; padding: 10px; margin-top: 1rem;}
+.red {font-weight: bold; color: #ff6676; padding: 10px; margin-top: 1rem;}
+
+.meta-item { width: 800px;}
+.meta-listada {margin-bottom: 3px; background: #faf7fd; padding: 10px; border-left: 4px solid #c795ff; flex: 1; min-height: 10px; overflow-wrap: break-word;}
+.meta-container {display: flex; justify-content: space-between; align-items: center;}
+.meta-acoes a {margin-left: 10px; color: blue; text-decoration: none; }
+.meta-acoes a:hover {text-decoration: underline;}

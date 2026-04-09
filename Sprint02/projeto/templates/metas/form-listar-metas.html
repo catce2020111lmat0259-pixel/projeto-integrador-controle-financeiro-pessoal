@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Metas</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Suas lista de Metas</h1>
+    </header>
+    <main>
+        <section class="secao-meta-criada">
+            <h3>Metas Criadas</h3>
+            <ul>
+                {% for meta in context.metas %}
+                    <li class="meta-item">
+                        <div class="meta-container">
+                            <div class="meta-listada">Meta {{ loop.index }}: {{ meta }}</div>
+                            <div class="meta-acoes">
+                                <a href="{{ url_for('editar_meta', index=loop.index0) }}">Editar</a>
+                                <a href="{{ url_for('excluir_meta', index=loop.index0) }}">Excluir</a>
+                            </div>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            
+            {% if context.index is defined %}
+                <h4>Editar Meta</h4>
+                <form method="POST" action="{{ url_for('atualizar_meta', index=context.index) }}">
+                    <input type="text" name="meta" value="{{ context.meta }}" required>
+                    <input type="submit" value="Salvar alterações">
+                </form>
+            {% endif %}
+
+            {% if context.mensagem %}
+                <div class="{{ context.tipo_mensagem }}">{{ context.mensagem }}</div>
+            {% endif %}
+            
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+
+</body>
+</html>
