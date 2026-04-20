@@ -6,6 +6,7 @@
 - Gabriel Lopes;
 - Daniel Bacelar;
 - Diego Bacelar;
+- Manuel;
 - Wesley Romão.
 
 ## Justificativa
